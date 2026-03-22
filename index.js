@@ -65,7 +65,7 @@ const playRound = (player, computer) => {
 };
 
 const playGame = pChoice => {
-    if (roundsCount === 6) return;
+    if (humanScore === 5 || computerScore === 5) return;
     roundsCount++;
     const humanChoice = getHumanChoice(pChoice);
     const computerChoice = getComputerChoice();
@@ -80,7 +80,7 @@ const playGame = pChoice => {
     pScore.textContent = `Player Score: ${humanScore}`;
     cScore.textContent = `Computer Score: ${computerScore}`;
     ties.textContent = `Ties: ${tiesCount}`;
-    if (roundsCount === 6) {
+    if (humanScore === 5 || computerScore === 5) {
         if (humanScore === computerScore) {
             winner.textContent = "It's Tied";
             winner.classList.add('result');
