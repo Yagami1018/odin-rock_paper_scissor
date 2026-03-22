@@ -1,11 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissor</title>
-</head>
-<body>
-    <script src="index.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>Rock-Paper-Scissor</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Rock-Paper-Scissors</h1>
+            <hr />
+            <div class="choices">
+                <button onclick="playGame('rock')">👊</button>
+                <button onclick="playGame('paper')">✋</button>
+                <button onclick="playGame('scissors')">✌️</button>
+            </div>
+            <div class="display">
+                <p class="pChoice" id="pChoice">Player Choice:</p>
+                <p class="cChoice" id="cChoice">Computer Choice:</p>
+                <p class="result" id="result">Result:</p>
+            </div>
+            <div class="results">
+                <h2 id="roundNum">Round: 1</h2>
+                <p id="pScore">Player Score: 0</p>
+                <p id="cScore">Computer Score: 0</p>
+                <p id="ties">Ties: 0</p>
+            </div>
+        </div>
+        <h1 id="winner"></h1>
+        <form action="">
+            <button class="playAgain" type="submit">Play Again</button>
+        </form>
+    </body>
 </html>

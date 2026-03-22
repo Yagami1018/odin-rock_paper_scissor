@@ -1,0 +1,75 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 60vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(0, 0%, 100%);
+}
+.title {
+    color: tomato;
+    margin-bottom: 0;
+    text-shadow: 3px 3px 3px black;
+}
+p,
+h2 {
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 1px black;
+}
+p {
+    margin: 0;
+}
+.container {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    box-shadow: 0 10px 15px hsla(0, 0%, 0%, 0.589);
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 20px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.title {
+    font-size: 4rem;
+}
+button {
+    margin-block: 25px;
+    font-size: 7rem;
+    margin-inline: 15px;
+    cursor: pointer;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px black;
+    border: none;
+    transition: background-color 0.5s ease;
+    background-color: hsl(180, 100%, 25%);
+}
+button:hover {
+    background-color: hsl(180, 100%, 35%);
+}
+button:active {
+    background-color: hsl(180, 100%, 45%);
+}
+.playAgain {
+    color: white;
+}
+#roundNum {
+    color: tomato;
+}
+.pChoice,
+#pScore {
+    color: green;
+}
+.cChoice,
+#cScore {
+    color: red;
+}
+.result,
+#ties {
+    color: gray;
+}
+#ties {
+    margin-bottom: 20px;
+}
+#winner {
+    font-size: 4rem;
+    text-shadow: 3px 3px 3px black;
+}
